@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: url("../media/cursor/cursor.svg") 9 9, auto;
+}
+
+body{
+    background-color: white;
+    /* display: inline-block;
+    justify-content: center;
+    align-items: center; */
+    scroll-snap-align: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+#intro{
+    padding: 2% 7% 2% 3%;
+}
+
+#bold{
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    color: black;
+    line-height: 93px;
+    letter-spacing: -2px;
+}
+
+#italic{
+    font-family: 'Baskervville', serif;
+    font-size: 82px;
+    color: black;
+    line-height: 93px;
+    letter-spacing: -2px;
+}
+
+a{
+    text-decoration-line: underline;
+    color: black;
+}
+
+a:hover{
+    color: rgb(0, 0, 255);
+    text-decoration-line: underline;
+    cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
+}
+
+#arrow{
+    width: 100%;
+}
+
+#arrow img{
+    height: 80px;
+    padding-top: 2%;
+}
+
+#project1{
+    background-color: rgb(0, 0, 255);
+}
