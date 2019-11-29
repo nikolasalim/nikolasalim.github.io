@@ -110,6 +110,10 @@ a:hover{
     cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
 }
 
+#intro-query{
+    display: none;
+}
+
 @media only screen and (min-width: 1600px){
     h1{
         font-size: 95px;
@@ -187,6 +191,13 @@ a:hover{
         display: none;
     }
     
+    #intro-desk{
+        display: none;
+    }
+        
+    #intro-query{
+        display: block;
+    }
 }
 
 
@@ -228,7 +239,7 @@ a:hover{
     
     #h3-b{
         font-size: 20px;
-        letter-spacing: -2x;
+        letter-spacing: -1px;
     }
     
     h4{
@@ -250,5 +261,12 @@ a:hover{
     
     #go-back{
         display: none;
+    }
+    #intro-desk{
+        display: none;
+    }
+        
+    #intro-query{
+        display: block;
     }
 }
