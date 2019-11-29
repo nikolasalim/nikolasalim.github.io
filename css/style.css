@@ -83,22 +83,6 @@ a:hover{
     cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
 }
 
-#arrow-down img{
-    height: 80px;
-    padding-top: 2%;
-}
-
-#arrow-down:hover{
-    
-    mask-image: url("../media/arrow-backb.svg");
-    src: url("../media/arrow-backb.svg");
-}
-
-#arrow-back img{
-    height: 50px;
-    padding-top: 2%;
-}
-
 #go-back{
     display: flex;
     width: 100%;
@@ -161,11 +145,6 @@ a:hover{
     #contacts, #skillset{
         width: 100%;
     }
-
-    #arrow-down img{
-        height: 60px;
-        padding-top: 0;
-    }
     
     h1{
         font-size: 60px;
@@ -179,17 +158,21 @@ a:hover{
     
     h3{
         font-size: 24px;
-        letter-spacing: 0px;
+        letter-spacing: -2px;
     }
     
     #h3-b{
         font-size: 24px;
-        letter-spacing: 0px;
+        letter-spacing: -2px;
     }
     
     h4{
         font-size: 40px;
         letter-spacing: -2px;
+    }
+
+    h4 a {
+        text-decoration: none;
     }
 
     #go-back-query{
@@ -203,16 +186,11 @@ a:hover{
     #go-back{
         display: none;
     }
-
-    #arrow-back img{
-        height: 35px;
-        padding-top: 2%;
-    }
     
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 380px){
 
     section#columns{
         display: inline-block;
@@ -230,11 +208,6 @@ a:hover{
     #contacts h2, #skillset h2{
         padding-bottom: 10px;
     }
-
-    #arrow-down img{
-        height: 60px;
-        padding-top: 0;
-    }
     
     h1{
         font-size: 30px;
@@ -249,17 +222,17 @@ a:hover{
     }
     
     h3{
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: -2px;
     }
     
     #h3-b{
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: -2x;
     }
     
     h4{
-        font-size: 40px;
+        font-size: 30px;
         letter-spacing: -2px;
     }
 
@@ -267,20 +240,11 @@ a:hover{
         display: flex;
         width: 100%;
         margin: 0;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         align-items: center;
     }
     
     #go-back{
         display: none;
     }
-
-    #arrow-back img{
-        height: 35px;
-        padding-top: 2%;
-    }
-
-    #arrow-down img{
-        height: 40px;    }
-    
 }
