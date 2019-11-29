@@ -13,7 +13,6 @@ body{
 
 section{
     height: calc(100vh - 40px);
-    /* height: 100vh; */
     padding: 40px 40px 0 40px;
 }
 
@@ -30,27 +29,14 @@ section#columns{
     width: 60%
 }
 
-/* #bold{
+h1, h3, h4{
     font-family: 'Roboto', sans-serif;
-    font-size: 80px;
     color: black;
-    line-height: 93px;
-    letter-spacing: -2px;
 }
 
-#italic{
-    font-family: 'Baskervville', serif;
-    font-size: 82px;
-    color: black;
-    line-height: 93px;
-    letter-spacing: -2px;
-} */
-
 h1{
-    font-family: 'Roboto', sans-serif;
     font-size: 80px;
-    color: black;
-    line-height: 93px;
+    line-height: 110%;
     letter-spacing: -2px;
 }
 
@@ -58,16 +44,14 @@ h2{
     font-family: 'Baskervville', serif;
     font-size: 82px;
     color: black;
-    line-height: 75px;
+    line-height: 80%;
     letter-spacing: -2px;
     font-weight: lighter;
 }
 
 h3{
-    font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    color: black;
-    line-height: 38px;
+    line-height: 120%;
     letter-spacing: -1px;
     padding-top: 2%;
 }
@@ -75,14 +59,17 @@ h3{
 #h3-b{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    /* color: rgb(0, 0, 255); */
-    /* color: black; */
     color: grey;
-    line-height: 38px;
+    line-height: 120%;
     letter-spacing: -1px;
     padding-top: 2%;
     font-style: italic;
     font-weight: lighter;
+}
+
+h4{
+    font-size: 50px;
+    letter-spacing: -2px;
 }
 
 a{
@@ -96,13 +83,35 @@ a:hover{
     cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
 }
 
-#arrow{
-    width: 100%;
-}
-
-#arrow img{
+#arrow-down img{
     height: 80px;
     padding-top: 2%;
+}
+
+#arrow-down:hover{
+    
+    mask-image: url("../media/arrow-backb.svg");
+    src: url("../media/arrow-backb.svg");
+}
+
+#arrow-back img{
+    height: 50px;
+    padding-top: 2%;
+}
+
+#go-back{
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    align-items: center;
+}
+
+#go-back-query{
+    display: none;
+}
+
+#go-back a {
+    text-decoration: none;
 }
 
 #project1{
@@ -115,4 +124,154 @@ a:hover{
 #project1 h2{
     color: white;
     cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
+}
+
+@media only screen and (min-width: 1600px){
+    h1{
+        font-size: 95px;
+    }
+    
+    h2{
+        font-size: 105px;
+    }
+    
+    h3{
+        font-size: 35px;
+    }
+    
+    #h3-b{
+        font-size: 35px;
+    }
+    
+    h4{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    section#columns{
+        display: inline-block;
+        justify-content: center;
+    }
+
+    section div{
+        padding: 20px 0;
+    }
+
+    #contacts, #skillset{
+        width: 100%;
+    }
+
+    #arrow-down img{
+        height: 60px;
+        padding-top: 0;
+    }
+    
+    h1{
+        font-size: 60px;
+        letter-spacing: -1px;
+    }
+    
+    h2{
+        font-size: 65px;
+        letter-spacing: -1px;
+    }
+    
+    h3{
+        font-size: 24px;
+        letter-spacing: 0px;
+    }
+    
+    #h3-b{
+        font-size: 24px;
+        letter-spacing: 0px;
+    }
+    
+    h4{
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+
+    #go-back-query{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    
+    #go-back{
+        display: none;
+    }
+
+    #arrow-back img{
+        height: 35px;
+        padding-top: 2%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px){
+    section#columns{
+        display: inline-block;
+        justify-content: center;
+    }
+
+    section div{
+        padding: 20px 0;
+    }
+
+    #contacts, #skillset{
+        width: 100%;
+    }
+
+    #arrow-down img{
+        height: 60px;
+        padding-top: 0;
+    }
+    
+    h1{
+        font-size: 38px;
+        letter-spacing: -1px;
+        line-height: 110%;
+    }
+    
+    h2{
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+    
+    h3{
+        font-size: 24px;
+        letter-spacing: 0px;
+    }
+    
+    #h3-b{
+        font-size: 24px;
+        letter-spacing: 0px;
+    }
+    
+    h4{
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+
+    #go-back-query{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    
+    #go-back{
+        display: none;
+    }
+
+    #arrow-back img{
+        height: 35px;
+        padding-top: 2%;
+    }
+    
 }
