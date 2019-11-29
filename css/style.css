@@ -2,28 +2,35 @@
     margin: 0;
     padding: 0;
     border: 0;
-    cursor: url("../media/cursor/cursor.svg") 9 9, auto;
+    cursor: url("../media/cursor/cursor.svg") 9 9, auto;    
 }
 
 body{
     background-color: white;
-    /* display: inline-block;
-    justify-content: center;
-    align-items: center; */
     scroll-snap-align: y mandatory;
     overflow-y: scroll;
 }
 
 section{
-    height: 100vh;
-    scroll-snap-align: center;
+    height: calc(100vh - 40px);
+    /* height: 100vh; */
+    padding: 40px 40px 0 40px;
 }
 
-#intro{
-    padding: 2% 7% 2% 3%;
+section#columns{
+    display: flex;
+    justify-content: center;
 }
 
-#bold{
+#contacts{
+    width: 40%;
+}
+
+#skillset{
+    width: 60%
+}
+
+/* #bold{
     font-family: 'Roboto', sans-serif;
     font-size: 80px;
     color: black;
@@ -37,6 +44,45 @@ section{
     color: black;
     line-height: 93px;
     letter-spacing: -2px;
+} */
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    color: black;
+    line-height: 93px;
+    letter-spacing: -2px;
+}
+
+h2{
+    font-family: 'Baskervville', serif;
+    font-size: 82px;
+    color: black;
+    line-height: 75px;
+    letter-spacing: -2px;
+    font-weight: lighter;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: black;
+    line-height: 38px;
+    letter-spacing: -1px;
+    padding-top: 2%;
+}
+
+#h3-b{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    /* color: rgb(0, 0, 255); */
+    /* color: black; */
+    color: grey;
+    line-height: 38px;
+    letter-spacing: -1px;
+    padding-top: 2%;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 a{
@@ -61,4 +107,12 @@ a:hover{
 
 #project1{
     background-color: rgb(0, 0, 255);
+    cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
+    display: flex;
+    align-items: center;
+}
+
+#project1 h2{
+    color: white;
+    cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
 }
