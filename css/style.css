@@ -236,6 +236,10 @@ a:hover{
         letter-spacing: -2px;
     }
 
+    h4 a {
+        text-decoration: none;
+    }
+
     #go-back-query{
         display: flex;
         width: 100%;
