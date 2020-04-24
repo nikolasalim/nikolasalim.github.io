@@ -1,8 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import "./App.css";
 import AboutContainer from "./components/AboutContainer";
-import NavBarContainer from "./components/NavBarContainer";
 import Bio from "./components/Bio";
+import NavBarContainer from "./components/NavBarContainer";
+import ProjectContainer from "./components/ProjectContainer";
 
 function App() {
   return (
@@ -10,8 +12,9 @@ function App() {
       <NavBarContainer />
       <Switch>
         <Route path="/about" component={AboutContainer}></Route>
-        <Route path="/" component={Bio}></Route>
+        <Route exact path="/" component={Bio}></Route>
       </Switch>
+      <ProjectContainer />
     </div>
   );
 }
