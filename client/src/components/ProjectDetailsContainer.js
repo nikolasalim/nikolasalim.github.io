@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectDetails from "./ProjectDetails";
 import allProjects from "../allProjects";
+import { Link } from "react-router-dom";
 
 function ProjectDetailsContainer(props) {
   const projectInfo = allProjects.filter((project) => {
@@ -9,6 +10,7 @@ function ProjectDetailsContainer(props) {
 
   return (
     <div>
+      <Link to="/">BACK</Link>
       <ProjectDetails project={projectInfo} />
     </div>
   );
