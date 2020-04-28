@@ -7,9 +7,35 @@ const Bio = () => {
   return (
     <div className={classes.body}>
       <div className={classes.nav}>
-        <p className={classes.navText}>ABOUT</p>
-        <p className={classes.navTextNoLink}> &#x263a; </p>
-        <p className={classes.navText}>PROJECTS</p>
+        <div className={classes.navBox}>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={classes.navText}
+          >
+            <p>ABOUT</p>
+          </Link>
+        </div>
+
+        <div className={classes.navBox}>
+          <p className={classes.navTextNoLink}> &#x263a; </p>
+        </div>
+
+        <div className={classes.navBox}>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={classes.navText}
+          >
+            <p>PROJECTS</p>
+          </Link>
+        </div>
       </div>
       <div className={classes.text}>
         HEY, I'M NIKO AND I LOVE

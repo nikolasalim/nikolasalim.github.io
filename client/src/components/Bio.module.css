@@ -2,7 +2,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-between;
   background-color: rgb(255, 72, 102);
 }
@@ -26,6 +25,12 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 25px;
+}
+
+.navBox {
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
 
 .link {

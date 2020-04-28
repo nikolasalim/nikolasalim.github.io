@@ -6,6 +6,8 @@ import FooterContainer from "./components/FooterContainer";
 import ProjectListContainer from "./components/ProjectListContainer";
 import ProjectDetailsContainer from "./components/ProjectDetailsContainer";
 
+import { Element } from "react-scroll";
+
 function App() {
   return (
     <div>
@@ -16,7 +18,10 @@ function App() {
         ></Route>
         <Route path="/" component={IntroContainer}></Route>
       </Switch>
-      <ProjectListContainer />
+      <Element id="projects" name="projects">
+        <ProjectListContainer />
+      </Element>
+
       <FooterContainer />
     </div>
   );
