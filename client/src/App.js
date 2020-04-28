@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
+import classes from "./App.module.css";
 import IntroContainer from "./components/IntroContainer";
 import FooterContainer from "./components/FooterContainer";
 import ProjectListContainer from "./components/ProjectListContainer";
