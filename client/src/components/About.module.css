@@ -1,0 +1,55 @@
+.body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 46%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  word-spacing: 0.14em;
+  color: black;
+  width: fit-content;
+}
+
+.boxDivider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider {
+  background-color: black;
+  width: 3px;
+  height: 90vh;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: rgb(255, 72, 102);
+  font-style: italic;
+  cursor: pointer;
+}
+
+.techBox {
+  height: fit-content;
+  width: fit-content;
+}
+
+.techItem {
+  padding: 10px 20px;
+  border: solid 3px rgb(255, 72, 102);
+}

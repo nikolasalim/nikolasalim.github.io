@@ -27,10 +27,21 @@
   padding: 10px 25px;
 }
 
-.navBox {
+.navBoxCenter {
   width: 30%;
   display: flex;
   justify-content: center;
+}
+
+.navBoxLeft {
+  width: 30%;
+  display: flex;
+}
+
+.navBoxRight {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .link {

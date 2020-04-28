@@ -7,7 +7,7 @@ const Bio = () => {
   return (
     <div className={classes.body}>
       <div className={classes.nav}>
-        <div className={classes.navBox}>
+        <div className={classes.navBoxLeft}>
           <Link
             activeClass="active"
             to="about"
@@ -20,11 +20,11 @@ const Bio = () => {
           </Link>
         </div>
 
-        <div className={classes.navBox}>
-          <p className={classes.navTextNoLink}> &#x263a; </p>
+        <div className={classes.navBoxCenter}>
+          <p className={classes.navTextNoLink}> &#x263a; {/* &#9787; */} </p>
         </div>
 
-        <div className={classes.navBox}>
+        <div className={classes.navBoxRight}>
           <Link
             activeClass="active"
             to="projects"
