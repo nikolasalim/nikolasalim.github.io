@@ -54,20 +54,62 @@ function About() {
         <div className={classes.divider}></div>
       </div>
       <div className={classes.box}>
-        <p className={classes.text}>
-          <u>SKILLSET:</u>
-          <div className={classes.techBox}>
+        <div className={classes.skillSet}>
+          <div className={classes.skillBox}>
+            <p className={classes.techText}>TECH&#8594;</p>
             <div className={classes.techItem}>
-              <p>REACT</p>
+              <p className={classes.techSubText}>HTML &#38; CSS</p>
             </div>
             <div className={classes.techItem}>
-              <p>REACT</p>
+              <p className={classes.techSubText}>JAVASCRIPT</p>
             </div>
             <div className={classes.techItem}>
-              <p>REACT</p>
+              <p className={classes.techSubText}>REACT</p>
+            </div>
+            <div className={classes.techItem}>
+              <p className={classes.techSubText}>REDUX</p>
+            </div>
+            <div className={classes.techItem}>
+              <p className={classes.techSubText}>NODE.JS</p>
+            </div>
+            <div className={classes.techItem}>
+              <p className={classes.techSubText}>REST APIs</p>
+            </div>
+            <div className={classes.techItem}>
+              <p className={classes.techSubText}>POSGRESQL</p>
+            </div>
+            <div className={classes.techItem}>
+              <p className={classes.techSubText}>DOCKER</p>
+            </div>
+            <div className={classes.techItem}>
+              <p className={classes.techSubText}>SEQUELIZE</p>
+            </div>
+            <div className={classes.techItem}>
+              <p className={classes.techSubText}>GIT &#38; GITHUB</p>
             </div>
           </div>
-        </p>
+          <div className={classes.skillBox}>
+            <p className={classes.designText}>DESIGN&#8594;</p>
+            <div className={classes.designItem}>
+              <p className={classes.designSubText}>PHOTOSHOP</p>
+            </div>
+            <div className={classes.designItem}>
+              <p className={classes.designSubText}>ILLUSTRATOR</p>
+            </div>
+            <div className={classes.designItem}>
+              <p className={classes.designSubText}>INDESIGN</p>
+            </div>
+          </div>
+          <div className={classes.skillBox}>
+            <p className={classes.langText}>LANG&#8594;</p>
+            <div className={classes.langItem}>
+              <p className={classes.langSubText}>ENGLISH</p>
+            </div>
+            <div className={classes.langItem}>
+              <p className={classes.langSubText}>PORTUGUESE</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
