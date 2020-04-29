@@ -15,6 +15,7 @@ function ProjectListContainer() {
               id={project.id}
               name={project.name}
               image={project.image}
+              className={classes.box}
             />
           );
         })}

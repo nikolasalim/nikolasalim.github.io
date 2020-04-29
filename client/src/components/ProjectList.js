@@ -1,16 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import classes from "./ProjectList.module.css";
 
-function ProjectList(props) {
+function ProjectList(props, { style }) {
+  const useThumb = () => {
+    const [hover, setHover] = useState(false);
+
+    const onMouseEnter = () => {
+      setHover(true);
+    };
+
+    const onMouseLeave = () => {
+      setHover(false);
+    };
+
+    const thumbStyle = !hover
+      ? null
+      : { cursor: "url('" + props.image + "') 100 100, auto" };
+
+    return { thumbStyle, onMouseEnter, onMouseLeave };
+  };
+
+  let { thumbStyle, ...thumbProps } = useThumb();
+
+  // console.log("thumbStyle is", thumbStyle);
+  console.log("props.image is:", props.image);
+
   return (
-    <div>
-      <Link to={`/project/${props.id}`} className={classes.projectName}>
+    <div className={classes.box}>
+      <Link
+        to={`/project/${props.id}`}
+        className={classes.projectName}
+        style={{ ...thumbStyle, ...style }}
+        {...thumbProps}
+      >
         <p>{props.name}</p>
       </Link>
     </div>
   );
 }
 
+// cursor: "url('/media/" + props.image + "') 100 100, auto"
 export default ProjectList;
