@@ -17,7 +17,7 @@ function ProjectList(props, { style }) {
 
     const thumbStyle = !hover
       ? null
-      : { cursor: "url('" + props.image + "') 100 100, auto" };
+      : { cursor: "url('" + props.thumb + "') 100 100, auto" };
 
     return { thumbStyle, onMouseEnter, onMouseLeave };
   };
@@ -25,7 +25,7 @@ function ProjectList(props, { style }) {
   let { thumbStyle, ...thumbProps } = useThumb();
 
   // console.log("thumbStyle is", thumbStyle);
-  console.log("props.image is:", props.image);
+  console.log("props.thumb is:", props.thumb);
 
   return (
     <div className={classes.box}>
@@ -35,7 +35,7 @@ function ProjectList(props, { style }) {
         style={{ ...thumbStyle, ...style }}
         {...thumbProps}
       >
-        <p>{props.name}</p>
+        <p>{props.thumbName}</p>
       </Link>
     </div>
   );

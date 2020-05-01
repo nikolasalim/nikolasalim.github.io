@@ -13,8 +13,8 @@ function ProjectListContainer() {
             <ProjectList
               key={project.id}
               id={project.id}
-              name={project.name}
-              image={project.image}
+              thumbName={project.thumbName}
+              thumb={project.thumb}
               className={classes.box}
             />
           );

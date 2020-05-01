@@ -8,7 +8,7 @@ function ProjectDetails(props) {
   return props.project.map((info) => {
     return (
       <div key={info.id} style={{ height: "100vh" }}>
-        <h1>{info.name}</h1>
+        <h1>{info.thumbName}</h1>
         <p>{info.description}</p>
         <img src={info.image} style={{ maxHeight: "500px" }}></img>
         <p>{info.repo}</p>
