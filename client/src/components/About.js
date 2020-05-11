@@ -6,16 +6,19 @@ function About() {
   return (
     <div className={classes.body}>
       <div className={classes.box}>
-        <p className={classes.text}>
-          <i>&#9758; NIKOLA SALIM</i>
+        <p className={classes.text}>&#9758; NIKOLA SALIM</p>
+        <br />
+        <br />
+        <div>
+          <p className={classes.subText}>Jr. Front-End Developer</p>
           <br />
-          JR. FRONT-END <br /> DEVELOPER
+          <p className={classes.subText}>Brazilian / German</p>
           <br />
-          <br />
-          BRAZILIAN / GERMAN <br />
-          BASED IN AMSTERDAM
-          <br />
-          <br />
+          <p className={classes.subText}>Based in Amsterdam</p> <br />
+        </div>
+
+        <br />
+        <div className={classes.text}>
           <a
             className={classes.link}
             href="mailto:nikolasalim@gmail.com"
@@ -47,7 +50,7 @@ function About() {
           >
             &#8594;CODECADEMY
           </a>
-        </p>
+        </div>
       </div>
 
       <div className={classes.boxDivider}>
@@ -61,52 +64,52 @@ function About() {
               <p className={classes.techSubText}>HTML &#38; CSS</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>JAVASCRIPT</p>
+              <p className={classes.techSubText}>Javascript</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>REACT</p>
+              <p className={classes.techSubText}>React</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>REDUX</p>
+              <p className={classes.techSubText}>Redux</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>NODE.JS</p>
+              <p className={classes.techSubText}>Node.js</p>
             </div>
             <div className={classes.techItem}>
               <p className={classes.techSubText}>REST APIs</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>POSGRESQL</p>
+              <p className={classes.techSubText}>PostgreSQL</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>DOCKER</p>
+              <p className={classes.techSubText}>Docker</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>SEQUELIZE</p>
+              <p className={classes.techSubText}>Sequelize</p>
             </div>
             <div className={classes.techItem}>
-              <p className={classes.techSubText}>GIT &#38; GITHUB</p>
+              <p className={classes.techSubText}>Git &#38; Github</p>
             </div>
           </div>
           <div className={classes.skillBox}>
             <p className={classes.designText}>DESIGN&#8594;</p>
             <div className={classes.designItem}>
-              <p className={classes.designSubText}>PHOTOSHOP</p>
+              <p className={classes.designSubText}>Photoshop</p>
             </div>
             <div className={classes.designItem}>
-              <p className={classes.designSubText}>ILLUSTRATOR</p>
+              <p className={classes.designSubText}>Illustrator</p>
             </div>
             <div className={classes.designItem}>
-              <p className={classes.designSubText}>INDESIGN</p>
+              <p className={classes.designSubText}>InDesign</p>
             </div>
           </div>
           <div className={classes.skillBox}>
             <p className={classes.langText}>LANG&#8594;</p>
             <div className={classes.langItem}>
-              <p className={classes.langSubText}>ENGLISH</p>
+              <p className={classes.langSubText}>English</p>
             </div>
             <div className={classes.langItem}>
-              <p className={classes.langSubText}>PORTUGUESE</p>
+              <p className={classes.langSubText}>Portuguese</p>
             </div>
           </div>
         </div>

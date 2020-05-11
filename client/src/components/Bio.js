@@ -30,25 +30,26 @@ const Bio = () => {
             to="projects"
             spy={true}
             smooth={true}
-            duration={500}
+            duration={800}
             className={classes.navText}
           >
             <p>PROJECTS</p>
           </Link>
         </div>
       </div>
+
       <div className={classes.text}>
-        HEY, I'M NIKO AND I LOVE
+        Hey, I'm Niko and I love
         <br />
-        CREATING THINGS FOR A LIVING.
+        creating things for a living.
         <br />
-        I'VE CREATED AS A DIGITAL MARKETER,
+        I've created as a digital marketer,
         <br />
-        ART DIRECTOR, BRAND STRATEGIST,
-        <br /> COPYWRITER, AND SUSHI APPRENTICE. <br />
-        NOW I'M CREATING AS <br /> A FRONT-END DEVELOPER.
+        art director, brand strategist,
+        <br /> copywriter, and sushi apprentice. <br />
+        Now I'm creating as <br />a front-end developer.
         <br />
-        IF YOU WANT TO COLLAB, <br />
+        If you want to collab, <br />
         <Link
           className={classes.link}
           activeClass="active"
@@ -57,7 +58,7 @@ const Bio = () => {
           smooth={true}
           duration={500}
         >
-          HIT ME UP.
+          hit me up.
         </Link>
       </div>
       <div className={classes.bottom}></div>

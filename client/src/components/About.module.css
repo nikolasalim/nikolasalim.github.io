@@ -16,16 +16,16 @@
 .text {
   font-size: 3em;
   line-height: 1em;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.01em;
   word-spacing: 0.14em;
   color: black;
   width: fit-content;
 }
 
 .subText {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 1em;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.01em;
   word-spacing: 0.14em;
   color: black;
   width: fit-content;
@@ -53,12 +53,6 @@
   font-style: italic;
   cursor: pointer;
 }
-/* 
-.skillSet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .skillBox {
   display: flex;
@@ -82,7 +76,7 @@
   font-size: 1.8em;
   line-height: 1em;
   font-style: italic;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.01em;
   word-spacing: 0.14em;
   color: rgb(255, 72, 102);
   width: fit-content;
@@ -107,7 +101,7 @@
   font-size: 1.8em;
   line-height: 1em;
   font-style: italic;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.01em;
   word-spacing: 0.14em;
   color: black;
   width: fit-content;
@@ -147,7 +141,7 @@
   font-size: 1.8em;
   line-height: 1em;
   font-style: italic;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.01em;
   word-spacing: 0.14em;
   color: rgb(158, 158, 158);
   width: fit-content;
