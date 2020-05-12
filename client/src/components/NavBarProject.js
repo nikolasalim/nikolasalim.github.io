@@ -13,10 +13,6 @@ function NavBarProject() {
           </LinkRouter>
         </div>
 
-        {/* <div className={classes.navBoxCenter}>
-          <p className={classes.navTextNoLink}> &#x263a; </p>
-        </div> */}
-
         <div className={classes.navBoxRight}>
           <Link
             activeClass="active"
