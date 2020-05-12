@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import classes from "./ProjectDetails.module.css";
 
@@ -12,15 +11,17 @@ function ProjectDetails(props) {
     return (
       <div className={classes.body}>
         <div key={info.id} className={classes.projectBox}>
-          <h1 className={classes.text}>{info.thumbName}</h1>
-          <p className={classes.subText}>{info.description}</p>
-          <div className={classes.link}>
-            <a href={info.repo} target="_blank">
-              CHECK THE REPO
-            </a>
-            <p className={classes.text}></p>
-          </div>
+          <h1 className={classes.text}>{info.name}</h1>
+          <p className={classes.description}>{info.description}</p>
           <img src={info.image} className={classes.image}></img>
+          <div className={classes.linkBox}>
+            <a href={info.repo} target="_blank" className={classes.link}>
+              Github repo
+            </a>
+            <a href={info.deployed} target="_blank" className={classes.link}>
+              Deployed version
+            </a>
+          </div>
         </div>
       </div>
     );

@@ -24,9 +24,6 @@ function ProjectList(props, { style }) {
 
   let { thumbStyle, ...thumbProps } = useThumb();
 
-  // console.log("thumbStyle is", thumbStyle);
-  console.log("props.thumb is:", props.thumb);
-
   return (
     <div className={classes.box}>
       <Link
@@ -41,5 +38,4 @@ function ProjectList(props, { style }) {
   );
 }
 
-// cursor: "url('/media/" + props.image + "') 100 100, auto"
 export default ProjectList;
