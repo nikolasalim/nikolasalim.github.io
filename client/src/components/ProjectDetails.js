@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
+import classes from "./ProjectDetails.module.css";
 
 function ProjectDetails(props) {
   useEffect(() => {
@@ -7,11 +10,18 @@ function ProjectDetails(props) {
 
   return props.project.map((info) => {
     return (
-      <div key={info.id} style={{ height: "100vh" }}>
-        <h1>{info.thumbName}</h1>
-        <p>{info.description}</p>
-        <img src={info.image} style={{ maxHeight: "500px" }}></img>
-        <p>{info.repo}</p>
+      <div className={classes.body}>
+        <div key={info.id} className={classes.projectBox}>
+          <h1 className={classes.text}>{info.thumbName}</h1>
+          <p className={classes.subText}>{info.description}</p>
+          <div className={classes.link}>
+            <a href={info.repo} target="_blank">
+              CHECK THE REPO
+            </a>
+            <p className={classes.text}></p>
+          </div>
+          <img src={info.image} className={classes.image}></img>
+        </div>
       </div>
     );
   });

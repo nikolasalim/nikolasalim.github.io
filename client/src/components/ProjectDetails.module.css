@@ -1,0 +1,25 @@
+.body {
+  height: 100vh;
+}
+
+.projectBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 3em;
+  line-height: 1em;
+  /* letter-spacing: 0.03em; */
+  letter-spacing: -0.01em;
+  word-spacing: 0.14em;
+  color: black;
+}
