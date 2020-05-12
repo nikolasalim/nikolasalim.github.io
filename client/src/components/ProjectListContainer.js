@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ProjectList from "./ProjectList";
 import allProjects from "../allProjects";
 
@@ -15,10 +17,17 @@ function ProjectListContainer() {
               id={project.id}
               thumbName={project.thumbName}
               thumb={project.thumb}
-              className={classes.box}
             />
           );
         })}
+        <Link to="project/nontech" className={classes.text}>
+          <ProjectList
+            key={"nontech"}
+            id={"nontech"}
+            thumbName={"NON-TECH"}
+            thumb={""}
+          />
+        </Link>
       </div>
     </div>
   );

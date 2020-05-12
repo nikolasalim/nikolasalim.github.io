@@ -31,17 +31,17 @@ const allProjects = [
   //   repo: "https://github.com/nikolasalim/good_good_go_second",
   //   deployed: "https://good-good-go-v2.netlify.app/",
   // },
-  {
-    id: 4,
-    thumbName: "NON-TECH",
-    name: "Non-Tech",
-    description: "Some other example",
-    image: "https://drive.google.com/uc?id=1HjPqJGwcz3m6F9yy-01zVjU1SXBzvlQG",
-    thumb:
-      "https://upload.wikimedia.org/wikipedia/commons/5/51/Indian_Water_Buffalo_Bubalus_arnee_by_Dr_Raju_Kasambe_IMG_0347_%2811%29_%28cropped%29.jpg",
-    repo: "https://github.com/nikolasalim/Pomo-LaBeouf",
-    deployed: "https://nikolasalim.github.io/Pomo-LaBeouf",
-  },
+  // {
+  //   id: 4,
+  //   thumbName: "NON-TECH",
+  //   name: "Non-Tech",
+  //   description: "Some other example",
+  //   image: "https://drive.google.com/uc?id=1HjPqJGwcz3m6F9yy-01zVjU1SXBzvlQG",
+  //   thumb:
+  //     "https://upload.wikimedia.org/wikipedia/commons/5/51/Indian_Water_Buffalo_Bubalus_arnee_by_Dr_Raju_Kasambe_IMG_0347_%2811%29_%28cropped%29.jpg",
+  //   repo: "https://github.com/nikolasalim/Pomo-LaBeouf",
+  //   deployed: "https://nikolasalim.github.io/Pomo-LaBeouf",
+  // },
 ];
 
 export default allProjects;
