@@ -1,0 +1,23 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectName {
+  color: white;
+  text-decoration: none;
+  font-size: 10em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.projectName:hover {
+  color: rgb(255, 72, 102);
+  font-style: italic;
+  /* cursor: url("/media/cursor.jpg") 100 100, auto; */
+  /* cursor: url("https://yt3.ggpht.com/a-/AOh14GjfNpKdfe6HMo8Ls5ycwokNauH-ahsEi5lN7kU_6Q=s48-c-k-c0xffffffff-no-nd-rj")
+      100 100,
+    auto; */
+}

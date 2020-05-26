@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: url("../media/cursor/cursor.svg") 9 9, auto;    
+}
+
+body{
+    background-color: white;
+    scroll-snap-align: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    height: calc(100vh - 40px);
+    padding: 40px 40px 0 40px;
+}
+
+section#columns{
+    display: flex;
+    justify-content: center;
+}
+
+#contacts{
+    width: 40%;
+}
+
+#skillset{
+    width: 60%
+}
+
+h1, h3, h4{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 110%;
+    letter-spacing: -2px;
+}
+
+h2{
+    font-family: 'Baskervville', serif;
+    font-size: 82px;
+    color: black;
+    line-height: 80%;
+    letter-spacing: -2px;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    padding-top: 2%;
+}
+
+#h3-b{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: grey;
+    line-height: 120%;
+    letter-spacing: -1px;
+    padding-top: 2%;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+h4{
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+a{
+    text-decoration-line: underline;
+    color: black;
+}
+
+a:hover{
+    color: rgb(0, 0, 255);
+    text-decoration-line: underline;
+    cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
+}
+
+#go-back{
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    align-items: center;
+}
+
+#go-back-query{
+    display: none;
+}
+
+#go-back a {
+    text-decoration: none;
+}
+
+#project1{
+    background-color: rgb(0, 0, 255);
+    cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
+    display: flex;
+    align-items: center;
+}
+
+#project1 h2{
+    color: white;
+    cursor: url("../media/cursor/cursorb.svg") 9 9, auto;
+}
+
+#intro-query{
+    display: none;
+}
+
+@media only screen and (min-width: 1600px){
+    h1{
+        font-size: 95px;
+    }
+    
+    h2{
+        font-size: 105px;
+    }
+    
+    h3{
+        font-size: 35px;
+    }
+    
+    #h3-b{
+        font-size: 35px;
+    }
+    
+    h4{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    section#columns{
+        display: inline-block;
+        justify-content: center;
+    }
+
+    section div{
+        padding: 20px 0;
+    }
+
+    #contacts, #skillset{
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 60px;
+        letter-spacing: -1px;
+    }
+    
+    h2{
+        font-size: 65px;
+        letter-spacing: -1px;
+    }
+    
+    h3{
+        font-size: 24px;
+        letter-spacing: -2px;
+    }
+    
+    #h3-b{
+        font-size: 24px;
+        letter-spacing: -2px;
+    }
+    
+    h4{
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+
+    h4 a {
+        text-decoration: none;
+    }
+
+    #go-back-query{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    
+    #go-back{
+        display: none;
+    }
+    
+    #intro-desk{
+        display: none;
+    }
+        
+    #intro-query{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 380px){
+
+    section#columns{
+        display: inline-block;
+        justify-content: center;
+    }
+
+    section div{
+        padding: 20px 0;
+    }
+
+    #contacts, #skillset{
+        width: 100%;
+    }
+
+    #contacts h2, #skillset h2{
+        padding-bottom: 10px;
+    }
+    
+    h1{
+        font-size: 30px;
+        letter-spacing: -2px;
+        line-height: 110%;
+    }
+    
+    h2{
+        font-size: 32px;
+        letter-spacing: -1px;
+        line-height: 95%;
+    }
+    
+    h3{
+        font-size: 20px;
+        letter-spacing: -2px;
+    }
+    
+    #h3-b{
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    
+    h4{
+        font-size: 30px;
+        letter-spacing: -2px;
+    }
+
+    h4 a {
+        text-decoration: none;
+    }
+
+    #go-back-query{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+    
+    #go-back{
+        display: none;
+    }
+    #intro-desk{
+        display: none;
+    }
+        
+    #intro-query{
+        display: block;
+    }
+}

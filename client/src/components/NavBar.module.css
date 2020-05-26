@@ -1,0 +1,62 @@
+.body {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 72, 102);
+}
+
+.bodyWhiteBg {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.navTextWhiteBg {
+  padding: 10px 25px;
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
+}
+
+.navTextWhiteBg:hover {
+  font-style: italic;
+  cursor: pointer;
+  color: rgb(255, 72, 102);
+}
+
+.navText {
+  padding: 10px 25px;
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
+}
+
+.navText:hover {
+  font-style: italic;
+  cursor: pointer;
+  color: white;
+}
+
+.navTextNoLink {
+  font-size: 3em;
+}
+
+.navBoxCenter {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.navBoxLeft {
+  width: 30%;
+  display: flex;
+}
+
+.navBoxRight {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
