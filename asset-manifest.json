@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/nikolasalim.github.io/static/css/main.7c025a2e.chunk.css",
+    "main.js": "/nikolasalim.github.io/static/js/main.1db1cde1.chunk.js",
+    "main.js.map": "/nikolasalim.github.io/static/js/main.1db1cde1.chunk.js.map",
+    "runtime-main.js": "/nikolasalim.github.io/static/js/runtime-main.ac5236a7.js",
+    "runtime-main.js.map": "/nikolasalim.github.io/static/js/runtime-main.ac5236a7.js.map",
+    "static/css/2.c2d0066e.chunk.css": "/nikolasalim.github.io/static/css/2.c2d0066e.chunk.css",
+    "static/js/2.f7a64df7.chunk.js": "/nikolasalim.github.io/static/js/2.f7a64df7.chunk.js",
+    "static/js/2.f7a64df7.chunk.js.map": "/nikolasalim.github.io/static/js/2.f7a64df7.chunk.js.map",
+    "index.html": "/nikolasalim.github.io/index.html",
+    "precache-manifest.12a007b3250163515b68af996d865194.js": "/nikolasalim.github.io/precache-manifest.12a007b3250163515b68af996d865194.js",
+    "service-worker.js": "/nikolasalim.github.io/service-worker.js",
+    "static/css/2.c2d0066e.chunk.css.map": "/nikolasalim.github.io/static/css/2.c2d0066e.chunk.css.map",
+    "static/css/main.7c025a2e.chunk.css.map": "/nikolasalim.github.io/static/css/main.7c025a2e.chunk.css.map",
+    "static/js/2.f7a64df7.chunk.js.LICENSE.txt": "/nikolasalim.github.io/static/js/2.f7a64df7.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/nikolasalim.github.io/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac5236a7.js",
+    "static/css/2.c2d0066e.chunk.css",
+    "static/js/2.f7a64df7.chunk.js",
+    "static/css/main.7c025a2e.chunk.css",
+    "static/js/main.1db1cde1.chunk.js"
+  ]
+}
