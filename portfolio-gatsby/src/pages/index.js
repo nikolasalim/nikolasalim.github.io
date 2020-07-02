@@ -6,20 +6,36 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 
 const IndexPage = () => {
+  // For using Markdown:
+  //
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allMarkdownRemark {
+  //       edges {
+  //         node {
+  //           id
+  //           frontmatter {
+  //             title
+  //           }
+  //           html
+  //           excerpt
+  //           fields {
+  //             slug
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+
   const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
+    {
+      allStrapiProjects {
         edges {
           node {
-            id
-            frontmatter {
-              title
-            }
-            html
-            excerpt
-            fields {
-              slug
-            }
+            name
+            description
+            slug
           }
         }
       }
@@ -37,7 +53,7 @@ const IndexPage = () => {
         </p>
       </div>
 
-      <div className="about-box">
+      {/* <div className="about-box">
         <div className="box">
           <p className="text">&#9758; NIKOLA SALIM</p>
           <br />
@@ -147,10 +163,19 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="projects-box">
         <ul>
+          {data.allStrapiProjects.edges.map(project => (
+            <li key={project.node.id}>
+              <Link to={`project/${project.node.slug}`}>
+                {project.node.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        {/* // For using Markdown: <ul>
           {data.allMarkdownRemark.edges.map(project => (
             <li key={project.node.id}>
               <Link to={`project/${project.node.fields.slug}`}>
@@ -158,7 +183,7 @@ const IndexPage = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </Layout>
   )
