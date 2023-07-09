@@ -18,7 +18,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className={styles.test}>test</div>
+        <div className={styles.navWrapper}>
+          <div className={styles.topNav}>
+            <div>Projects</div>
+            <div>About</div>
+          </div>
+          <div className={styles.bottomNav}>
+            <div>Blog</div>
+            <div>Other</div>
+          </div>
+        </div>
         {children}
       </body>
     </html>
