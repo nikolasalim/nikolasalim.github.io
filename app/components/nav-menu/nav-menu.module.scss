@@ -1,0 +1,25 @@
+.navWrapper {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Mona-Sans";
+  font-size: 4rem;
+  letter-spacing: -0.1rem;
+  .topNav, .bottomNav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+  }
+  .topNav {
+    top: 0;
+  }
+  .bottomNav {
+    bottom: 0;
+  }
+}
