@@ -6,7 +6,12 @@
   width: 100vw;
   height: 100vh;
   font-family: 'Hubot-Sans';
+  font-size: 4rem;
+  line-height: 3.5rem;
   letter-spacing: -0.2rem;
   word-spacing: 0.5rem;
-  font-size: 4rem;
+  text-align: center;
+  p {
+    margin: 0.5rem;
+  }
 }

@@ -1,0 +1,17 @@
+.soonTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 0.1rem 0.2rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: blue;
+  border-radius: 1rem;
+  transform: skewY(-10deg);
+
+  .star {
+    font-size: 0.8rem;
+    margin: 0 0.4rem;
+  }
+}
