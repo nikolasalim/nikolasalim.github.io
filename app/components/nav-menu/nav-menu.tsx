@@ -1,16 +1,17 @@
 import styles from './nav-menu.module.scss'
+import Link from 'next/link';
 
 export default function NavMenu() {
   return (
-    <div className={styles.navWrapper}>
+    <>
       <div className={styles.topNav}>
-        <div>PROJECTS</div>
-        <div>ABOUT</div>
+        <Link href="/" className={styles.navLink}>PROJECTS</Link>
+        <Link href="/" className={styles.navLink}>ABOUT</Link>
       </div>
       <div className={styles.bottomNav}>
-        <div>BLOG</div>
-        <div>OTHER</div>
+        <Link href="/" className={styles.navLink}>BLOG</Link>
+        <Link href="/" className={styles.navLink}>OTHER</Link>
       </div>
-    </div>
+    </>
   )
 }
