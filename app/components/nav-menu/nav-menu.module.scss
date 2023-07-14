@@ -37,3 +37,16 @@
   right: -1rem;
   text-indent: unset;
 }
+
+@media screen and (max-width: 700px){
+  .topNav, .bottomNav {
+    font-size: 1.5rem;
+    letter-spacing: unset;
+  }
+
+  .soonTagWrapper {
+    bottom: -0.6rem;
+    right: -0.5rem;
+    width: fit-content;
+  }
+}
