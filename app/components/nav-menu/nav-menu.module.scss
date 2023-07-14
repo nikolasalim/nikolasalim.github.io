@@ -24,8 +24,10 @@
   margin: 1rem 1.5rem;
   text-indent: -0.2rem;
   &:hover {
-    transition: all 75ms ease-in;
-    font-variation-settings: 'ital' 7;
+    .navItem {
+      transition: all 75ms ease-in;
+      font-variation-settings: 'ital' 7;
+    }
   }
 }
 
