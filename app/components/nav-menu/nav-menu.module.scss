@@ -20,13 +20,14 @@
   position: relative;
   color: black;
   text-decoration: none;
-  font-variation-settings: 'ital' 0;
   margin: 1rem 1.5rem;
   text-indent: -0.2rem;
+  transform: skewX(0deg);
   &:hover {
     .navItem {
-      transition: all 75ms ease-in;
-      font-variation-settings: 'ital' 7;
+      display: block;
+      transform: skewX(-8deg);
+      transition: all 100ms ease-in;
     }
   }
 }
