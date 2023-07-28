@@ -1,5 +1,6 @@
-import './styles/globals.scss'
-import type { Metadata } from 'next'
+import './styles/globals.scss';
+import styles from './layout.module.scss';
+import type { Metadata } from 'next';
 import NavMenu from "@/app/components/nav-menu/nav-menu";
 
 export const metadata: Metadata = {
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <div className={styles.bodyWrapper}>
+          {children}
+        </div>
         <NavMenu/>
       </body>
     </html>
