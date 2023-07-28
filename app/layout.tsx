@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import NavMenu from "@/app/components/nav-menu/nav-menu";
 
 export const metadata: Metadata = {
-  title: 'Nikola Salim – Frontend Developer',
+  title: 'Nikola Salim – Front-end Developer',
   description: '',
 }
 

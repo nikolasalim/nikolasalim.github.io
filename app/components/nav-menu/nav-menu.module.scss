@@ -1,9 +1,11 @@
+@import '../../styles/variables';
+
 .topNav, .bottomNav {
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  font-family: "Mona Sans";
+  font-family: 'Mona-Sans';
   font-size: 4rem;
   letter-spacing: -0.1rem;
 }
@@ -18,11 +20,11 @@
 
 .navLink {
   position: relative;
-  color: black;
-  text-decoration: none;
   margin: 1rem 1.5rem;
-  text-indent: -0.2rem;
   transform: skewX(0deg);
+  text-decoration: none;
+  text-indent: -0.2rem;
+  color: $colour-black;
   &:hover {
     .navItem {
       display: block;

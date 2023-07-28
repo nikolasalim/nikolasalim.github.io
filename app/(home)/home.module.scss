@@ -1,3 +1,5 @@
+@import '../styles/variables';
+
 .intro {
   display: flex;
   justify-content: center;
@@ -7,11 +9,9 @@
   height: 100vh;
   font-family: 'Hubot-Sans';
   font-size: 4rem;
-  line-height: 3.5rem;
-  letter-spacing: -0.2rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.3rem;
   word-spacing: 0.5rem;
   text-align: center;
-  p {
-    margin: 0.5rem;
-  }
+  color: $colour-black;
 }
