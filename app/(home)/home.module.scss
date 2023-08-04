@@ -1,24 +1,28 @@
 @import '../styles/variables';
 
-.intro {
+.content {
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
   width: 100%;
+  height: fit-content;
   font-family: 'Hubot-Sans';
-  font-size: 4rem;
-  line-height: 3.8rem;
+  font-size: 3.5rem;
   letter-spacing: -0.3rem;
   word-spacing: 0.5rem;
   text-align: center;
   color: $colour-black;
-  div {
+  .lineWrapper {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4rem;
+    height: 3.5rem;
     width: 100%;
     p {
       position: absolute;
@@ -33,6 +37,99 @@
       }
     }
   }
+}
+.additionalInfo {
+  display: flex;
+  width: 60%;
+  margin: 5rem 20% 0 20%;
+  gap: 4rem;
+  font-family: 'Mona-Sans';
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+  letter-spacing: -0.02rem;
+  font-variation-settings: "wght" 300;
+  color: $colour-black;
+}
+
+.bio, .stackContainer {
+  flex: 1;
+}
+
+.stackContainer {
+  .stackList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: fit-content;
+    .techItem, .designItem, .langItem {
+      padding: 0.5rem 0.8rem;
+      border-width: 1.5px;
+      border-style: solid;
+      border-radius: 2rem;
+      font-family: 'Hubot-Sans';
+      cursor: default;
+    }
+    .techItem {
+      color: $colour-blue;
+      border-color: $colour-blue;
+    }
+
+    .designItem {
+      color: $colour-black;
+      border-color: $colour-black;
+    }
+
+    .langItem {
+      color: $colour-grey;
+      border-color: $colour-grey;
+    }
+  }
+  .legendContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    font-size: 1rem;
+    & > * {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .legendWrapper {
+      display: flex;
+      align-items: center;
+    }
+    .legendCircle {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      margin-right: 0.2rem;
+      background-color: $colour-black;
+      &.tech {
+        background-color: $colour-blue;
+      }
+      &.lang {
+        background-color: $colour-grey;
+      }
+    }
+  }
+}
+
+.downloadBtn {
+  display: flex;
+  margin-top: 3rem;
+  border: unset;
+  color: $colour-blue;
+  background-color: unset;
+  font-family: 'Mona-Sans';
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+  letter-spacing: -0.02rem;
+  font-variation-settings: "wght" 300;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {

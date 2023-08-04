@@ -16,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={styles.bodyWrapper}>
-          {children}
-        </div>
+        {children}
         <NavMenu/>
       </body>
     </html>
