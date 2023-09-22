@@ -1,6 +1,6 @@
-import styles from './home.module.scss';
+import styles from './about.module.scss';
 
-export default function Home() {
+export default function About() {
   const techStack = ['Angular', 'Typescript', 'HTML', 'SCSS', 'React', 'Next.js', 'Capacitor', 'Ionic', 'Playwright', 'Git']
   const designStack = ['Photoshop', 'Illustrator', 'Figma']
   const languages = ['English', 'Portuguese']
