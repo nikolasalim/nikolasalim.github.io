@@ -17,9 +17,11 @@ export default function About() {
           <p>As a developer, I have great interest in building products that resonate with people, bridging the gap between great designs and great implementation.</p>
           <br/>
           <p>And as a person, I've always been curious about everything – which is especially handy when a big part of your job is learning new things every day.</p>
-          <button className={styles.downloadBtn}>
-            ☞ Download CV
-          </button>
+          <div className={styles.linksContainer}>
+            <a href="https://drive.google.com/file/d/1c8VQi7TZLhkeXoW7kRo02-VT-m98fnVk/view?usp=sharing" target="_blank" className={styles.downloadBtn}>☞ Download CV</a>
+            <a href="https://github.com/nikolasalim" target="_blank"><img src="assets/images/icon-github.svg"/></a>
+            <a href="https://www.linkedin.com/in/nikolasalim/" target="_blank"><img src="assets/images/icon-linkedin.svg"/></a>
+          </div>
         </div>
         <div className={styles.stackContainer}>
           <div className={styles.stackList}>

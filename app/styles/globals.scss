@@ -10,3 +10,15 @@ main {
   padding: 0 3rem;
   box-sizing: border-box;
 }
+
+// resets
+
+button {
+  background-color: unset;
+  border: unset;
+  padding: unset;
+}
+
+a {
+  text-decoration: unset;
+}
