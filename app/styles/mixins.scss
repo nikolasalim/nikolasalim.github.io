@@ -17,8 +17,8 @@
 }
 
 @mixin font-l ($type: 'text'){
-  font-size: 2.25rem;
-  line-height: 2.25rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   word-spacing: 0.4rem;
   @if $type == 'text' {
     font-family: 'Mona-Sans', sans-serif;
@@ -32,13 +32,21 @@
   }
 }
 
-@mixin font-m {
-  font-family: 'Mona-Sans', sans-serif;
-  font-size: 1.5rem;
-  font-variation-settings: 'wght' 300;
-  letter-spacing: -0.05rem;
+@mixin font-m ($type: 'text') {
+  font-size: 1.75rem;
   line-height: 1.75rem;
   word-spacing: 0.3rem;
+
+  @if $type == 'text' {
+    font-family: 'Mona-Sans', sans-serif;
+    font-variation-settings: 'wght' 300;
+    letter-spacing: -0.05rem;
+  }
+  @if $type == 'title' {
+    font-family: 'Hubot-Sans', sans-serif;
+    font-variation-settings: 'wght' 400;
+    letter-spacing: -0.1rem;
+  }
 }
 
 @mixin font-s {

@@ -5,19 +5,21 @@
   justify-content: space-between;
   width: 100%;
   position: fixed;
+  box-sizing: border-box;
 }
 
 .topNav {
   top: 0;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .bottomNav {
   bottom: 0;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .navLink {
   position: relative;
-  margin: 2rem;
   color: $colour-black;
   transform: skewX(0deg);
   @include font-xl;
@@ -52,7 +54,7 @@
 @media screen and (max-width: 768px){
   .navLink {
     @include font-m;
-    margin: 1.5rem;
+    font-variation-settings: 'wght' 400;
   }
 
   .soonTagWrapper {
