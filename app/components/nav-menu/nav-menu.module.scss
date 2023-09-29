@@ -6,7 +6,7 @@
   width: 100%;
   position: fixed;
   font-family: 'Mona-Sans';
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: -0.1rem;
 }
 
@@ -32,16 +32,25 @@
       transition: all 100ms ease-in;
     }
   }
+  &.active {
+    transform: skewX(-8deg);
+    .navItem {
+      text-decoration: underline;
+      &:hover {
+        transform: unset;
+      }
+    }
+  }
 }
 
 .soonTagWrapper {
   position: absolute;
-  bottom: 10%;
-  right: -1rem;
+  bottom: -0.1rem;
+  right: -0.75rem;
   text-indent: unset;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
   .topNav, .bottomNav {
     font-size: 1.5rem;
     letter-spacing: unset;

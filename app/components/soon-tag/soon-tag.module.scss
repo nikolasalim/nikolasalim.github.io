@@ -3,20 +3,21 @@
   justify-content: center;
   align-items: center;
   height: fit-content;
-  padding: 0.1rem 0.2rem 0.1rem 0.3rem;
-  font-size: 1.1rem;
+  border-radius: 1rem;
+  padding: 0.1rem 0.1rem 0.1rem 0.2rem;
   color: white;
   background-color: blue;
-  border-radius: 1rem;
   transform: skewY(-10deg);
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
 
   .star {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin: 0 0.4rem;
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
   .soonTag {
     font-size: 0.8rem;
     transform: skewY(-6deg);
