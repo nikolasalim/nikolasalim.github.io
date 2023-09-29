@@ -1,4 +1,4 @@
-@import 'app/styles/variables';
+@import 'app/styles/mixins';
 
 .content {
   height: 100vh;
@@ -9,12 +9,9 @@
 }
 
 .intro {
+  @include font-xl('title');
   width: 100%;
   height: fit-content;
-  font-family: 'Hubot-Sans';
-  font-size: 3rem;
-  letter-spacing: -0.22rem;
-  word-spacing: 0.5rem;
   text-align: center;
   color: $colour-black;
   .lineWrapper {
@@ -40,15 +37,10 @@
 }
 
 .additionalInfo {
+  @include font-m;
   display: flex;
   margin: 4rem 10%;
   gap: 4rem;
-  font-family: 'Mona-Sans';
-  font-size: 1.5rem;
-  font-weight: normal;
-  line-height: 1.8rem;
-  letter-spacing: -0.02rem;
-  font-variation-settings: "wght" 300;
   color: $colour-black;
 }
 
@@ -89,7 +81,7 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 1rem;
-    font-size: 1rem;
+    @include font-s;
     & > * {
       margin-right: 1rem;
       &:last-child {
@@ -125,15 +117,11 @@
 }
 
 .downloadBtn {
+  @include font-m;
   border: unset;
   color: $colour-blue;
   background-color: unset;
   font-family: 'Mona-Sans';
-  font-size: 1.5rem;
-  font-weight: normal;
-  line-height: 1.8rem;
-  letter-spacing: -0.02rem;
-  font-variation-settings: "wght" 300;
   cursor: pointer;
 }
 

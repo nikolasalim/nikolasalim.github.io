@@ -1,13 +1,10 @@
-@import '../../styles/variables';
+@import '../../styles/mixins';
 
 .topNav, .bottomNav {
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  font-family: 'Mona-Sans';
-  font-size: 3rem;
-  letter-spacing: -0.1rem;
 }
 
 .topNav {
@@ -20,11 +17,13 @@
 
 .navLink {
   position: relative;
-  margin: 1rem 1.5rem;
+  margin: 2rem;
+  color: $colour-black;
   transform: skewX(0deg);
+  @include font-xl;
+  font-variation-settings: 'wght' 400;
   text-decoration: none;
   text-indent: -0.2rem;
-  color: $colour-black;
   &:hover {
     .navItem {
       display: block;
@@ -45,15 +44,15 @@
 
 .soonTagWrapper {
   position: absolute;
-  bottom: -0.1rem;
+  bottom: -0.5rem;
   right: -0.75rem;
   text-indent: unset;
 }
 
 @media screen and (max-width: 768px){
-  .topNav, .bottomNav {
-    font-size: 1.5rem;
-    letter-spacing: unset;
+  .navLink {
+    @include font-m;
+    margin: 1.5rem;
   }
 
   .soonTagWrapper {
