@@ -1,5 +1,4 @@
 import './styles/globals.scss';
-import styles from './layout.module.scss';
 import type { Metadata } from 'next';
 import NavMenu from "@/app/components/nav-menu/nav-menu";
 
