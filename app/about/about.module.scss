@@ -24,6 +24,19 @@
   height: fit-content;
   text-align: center;
   color: $colour-black;
+  &.desktop {
+    @media (max-width: $media-s) {
+      display: none;
+    }
+    @media (min-width: $media-s) {
+      display: unset;
+    }
+  }
+  &.mobile {
+    @media (min-width: $media-s) {
+      display: none;
+    }
+  }
 
   @media (max-width: $media-s) {
     @include font-m('title');
