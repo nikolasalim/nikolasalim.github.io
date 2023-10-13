@@ -1,0 +1,77 @@
+@import 'variables';
+
+@mixin font-xl ($type: 'text'){
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  word-spacing: 0.75rem;
+  @if $type == 'text' {
+    font-family: 'Mona-Sans', sans-serif;
+    font-variation-settings: 'wght' 300;
+    letter-spacing: -0.15rem;
+  }
+  @if $type == 'title' {
+    font-family: 'Hubot-Sans', sans-serif;
+    font-variation-settings: 'wght' 400;
+    letter-spacing: -0.35rem;
+  }
+}
+
+@mixin font-l ($type: 'text'){
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  word-spacing: 0.4rem;
+  @if $type == 'text' {
+    font-family: 'Mona-Sans', sans-serif;
+    font-variation-settings: 'wght' 300;
+    letter-spacing: -0.075rem;
+  }
+  @if $type == 'title' {
+    font-family: 'Hubot-Sans', sans-serif;
+    font-variation-settings: 'wght' 400;
+    letter-spacing: -0.15rem;
+  }
+}
+
+@mixin font-m ($type: 'text') {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  word-spacing: 0.3rem;
+
+  @if $type == 'text' {
+    font-family: 'Mona-Sans', sans-serif;
+    font-variation-settings: 'wght' 300;
+    letter-spacing: -0.05rem;
+  }
+  @if $type == 'title' {
+    font-family: 'Hubot-Sans', sans-serif;
+    font-variation-settings: 'wght' 400;
+    letter-spacing: -0.1rem;
+  }
+}
+
+@mixin font-s {
+  font-family: 'Mona-Sans', sans-serif;
+  font-size: 1.25rem;
+  font-variation-settings: 'wght' 300;
+  letter-spacing: -0.025rem;
+  line-height: 1.5rem;
+  word-spacing: 0.3rem;
+}
+
+@mixin font-xs {
+  font-family: 'Mona-Sans', sans-serif;
+  font-size: 1rem;
+  font-variation-settings: 'wght' 400;
+  letter-spacing: -0.025rem;
+  line-height: 1.25rem;
+  word-spacing: 0.2rem;
+}
+
+@mixin font-xxs {
+  font-family: 'Mona-Sans', sans-serif;
+  font-size: 0.75rem;
+  font-variation-settings: 'wght' 400;
+  letter-spacing: -0.02rem;
+  line-height: 1rem;
+  word-spacing: 0.2rem;
+}

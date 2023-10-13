@@ -1,0 +1,183 @@
+@import 'app/styles/mixins';
+
+.content {
+  @include font-s;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $media-s) {
+    text-align: center;
+    @include font-xs;
+  }
+  @media (min-width: $media-s) {
+    @include font-s;
+  }
+  @media (max-width: $media-s) {
+    padding: 1.25rem 1.25rem 0 1.25rem;
+  }
+}
+
+.intro {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  color: $colour-black;
+
+  @media (max-width: $media-s) {
+    @include font-m('title');
+  }
+  @media (min-width: $media-s) {
+    @include font-l('title');
+  }
+  @media (min-width: $media-l) {
+    @include font-xl('title');
+  }
+
+  .lineWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    @media (max-width: $media-s) {
+      height: 1.75rem;
+    }
+    @media (min-width: $media-l) {
+      height: 3.5rem;
+    }
+    p {
+      position: absolute;
+      animation-name: fadeIn;
+      top: 0;
+    }
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        p {
+          animation-duration: $i * 400ms;
+        }
+      }
+    }
+  }
+}
+
+.additionalInfo {
+  display: flex;
+  margin: 3rem 10% 0 10%;
+  gap: 4rem;
+  color: $colour-black;
+  padding-bottom: 2rem;
+  @media (max-width: $media-m) {
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem 0 0 0;
+    gap: 3rem;
+    max-width: 50rem;
+  }
+  @media (min-width: $media-m) {
+    max-width: 75rem;
+  }
+}
+
+.bio, .stackContainer {
+  flex: 1;
+}
+
+.stackContainer {
+  .stackList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    height: fit-content;
+    @media (max-width: $media-m) {
+      @include font-xs;
+      gap: 0.5em;
+      justify-content: center;
+    }
+    .techItem, .designItem, .langItem {
+      padding: 0.4em 0.7em;
+      border-width: 1.5px;
+      border-style: solid;
+      border-radius: 2em;
+      cursor: default;
+    }
+    .techItem {
+      color: $colour-blue;
+      border-color: $colour-blue;
+    }
+
+    .designItem {
+      color: $colour-black;
+      border-color: $colour-black;
+    }
+
+    .langItem {
+      color: $colour-grey;
+      border-color: $colour-grey;
+    }
+  }
+  .legendContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    @include font-xs;
+    @media (max-width: $media-m) {
+      justify-content: center;
+    }
+    & > * {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .legendWrapper {
+      display: flex;
+      align-items: center;
+    }
+    .legendCircle {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      margin-right: 0.2rem;
+      background-color: $colour-black;
+      &.tech {
+        background-color: $colour-blue;
+      }
+      &.lang {
+        background-color: $colour-grey;
+      }
+    }
+  }
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  @media (max-width: $media-m) {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+.downloadBtn {
+  border: unset;
+  color: $colour-blue;
+  background-color: unset;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    top: 1rem;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

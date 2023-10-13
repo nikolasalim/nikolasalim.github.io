@@ -1,53 +1,73 @@
-.topNav, .bottomNav {
+@import '../../styles/mixins';
+
+.topNav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
   width: 100%;
-  position: fixed;
-  font-family: "Mona Sans";
-  font-size: 4rem;
-  letter-spacing: -0.1rem;
+  position: sticky;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 1;
 }
 
 .topNav {
   top: 0;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
-.bottomNav {
-  bottom: 0;
+.asterisk {
+  @include font-s;
+  color: $colour-black;
+  @media (max-width: $media-s) {
+    @include font-xs;
+  }
+  &:hover {
+    font-variation-settings: 'wght' 1000;
+  }
 }
 
 .navLink {
   position: relative;
-  color: black;
-  text-decoration: none;
-  margin: 1rem 1.5rem;
-  text-indent: -0.2rem;
+  color: $colour-black;
   transform: skewX(0deg);
+  @include font-m;
+  text-decoration: none;
+  text-indent: -0.2rem;
+  @media (max-width: $media-s) {
+    @include font-s;
+  }
   &:hover {
     .navItem {
       display: block;
       transform: skewX(-8deg);
-      transition: all 100ms ease-in;
+      transition: all 150ms ease-in;
+    }
+  }
+  &.active {
+    transform: skewX(-8deg);
+    .navItem {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: $colour-blue;
+      text-underline-offset: 2px;
+      @media (max-width: $media-s) {
+        text-decoration-thickness: 1px;
+      }
+      &:hover {
+        transform: unset;
+      }
     }
   }
 }
 
 .soonTagWrapper {
   position: absolute;
-  bottom: 10%;
-  right: -1rem;
-  text-indent: unset;
-}
-
-@media screen and (max-width: 700px){
-  .topNav, .bottomNav {
-    font-size: 1.5rem;
-    letter-spacing: unset;
-  }
-
-  .soonTagWrapper {
-    bottom: -0.6rem;
-    right: -0.5rem;
-    width: fit-content;
+  bottom: -0.4rem;
+  right: -0.5rem;
+  width: fit-content;
+  @media (max-width: $media-s){
+    bottom: -0.5rem;
   }
 }
