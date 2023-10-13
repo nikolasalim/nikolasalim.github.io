@@ -2,24 +2,24 @@
 
 .content {
   @include font-s;
-  min-height: 100vh;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media (max-width: $media-m) {
-    flex-direction: column;
+  @media (max-width: $media-s) {
     text-align: center;
-    margin: 5rem 0;
+    @include font-xs;
   }
-  @media (min-width: $media-m) {
-    margin: unset;
+  @media (min-width: $media-s) {
+    @include font-s;
   }
-
+  @media (max-width: $media-s) {
+    padding: 1.25rem 1.25rem 0 1.25rem;
+  }
 }
 
 .intro {
-  @include font-xl('title');
   width: 100%;
   height: fit-content;
   text-align: center;
@@ -46,14 +46,14 @@
       height: 1.75rem;
     }
     @media (min-width: $media-l) {
-      height: 3rem;
+      height: 3.5rem;
     }
     p {
       position: absolute;
       animation-name: fadeIn;
       top: 0;
     }
-    @for $i from 1 through 4 {
+    @for $i from 1 through 5 {
       &:nth-child(#{$i}) {
         p {
           animation-duration: $i * 400ms;
@@ -68,10 +68,16 @@
   margin: 3rem 10% 0 10%;
   gap: 4rem;
   color: $colour-black;
+  padding-bottom: 2rem;
   @media (max-width: $media-m) {
     flex-direction: column;
     text-align: center;
     margin: 3rem 0 0 0;
+    gap: 3rem;
+    max-width: 50rem;
+  }
+  @media (min-width: $media-m) {
+    max-width: 75rem;
   }
 }
 
@@ -154,6 +160,7 @@
   margin-top: 3rem;
   @media (max-width: $media-m) {
     justify-content: center;
+    margin-top: 2rem;
   }
 }
 

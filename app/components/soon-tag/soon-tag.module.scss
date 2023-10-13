@@ -1,31 +1,21 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
 
 .soonTag {
   display: flex;
   justify-content: center;
   align-items: center;
   height: fit-content;
-  border-radius: 1rem;
-  padding: 0.1rem 0.1rem 0.1rem 0.2rem;
-  color: white;
-  background-color: blue;
-  transform: skewY(-8deg);
-  @include font-xs;
-
+  transform: skewY(-6deg);
+  padding: 0.1em 0.1em 0 0.2em;
+  color: $colour-black;
+  background-color: white;
+  border: 1px solid $colour-black;
+  border-radius: 1em;
+  @include font-xxs;
+  line-height: 1.15em;
   .star {
-    @include font-xxs;
-    margin: 0 0.4rem;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .soonTag {
-    @include font-xxs;
-    transform: skewY(-6deg);
-    .star {
-      font-size: 0.5rem;
-      margin: unset;
-      margin: 0 0.2rem;
-    }
+    font-size: 0.5rem;
+    margin: 0 0.2rem;
   }
 }

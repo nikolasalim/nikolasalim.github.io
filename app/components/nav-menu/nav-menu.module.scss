@@ -1,11 +1,15 @@
 @import '../../styles/mixins';
 
-.topNav, .bottomNav {
+.topNav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
   width: 100%;
-  position: fixed;
+  position: sticky;
   box-sizing: border-box;
+  background-color: white;
+  z-index: 1;
 }
 
 .topNav {
@@ -13,30 +17,44 @@
   padding: 2rem 2rem 1rem 2rem;
 }
 
-.bottomNav {
-  bottom: 0;
-  padding: 1rem 2rem 2rem 2rem;
+.asterisk {
+  @include font-s;
+  color: $colour-black;
+  @media (max-width: $media-s) {
+    @include font-xs;
+  }
+  &:hover {
+    font-variation-settings: 'wght' 1000;
+  }
 }
 
 .navLink {
   position: relative;
   color: $colour-black;
   transform: skewX(0deg);
-  @include font-xl;
-  font-variation-settings: 'wght' 400;
+  @include font-m;
   text-decoration: none;
   text-indent: -0.2rem;
+  @media (max-width: $media-s) {
+    @include font-s;
+  }
   &:hover {
     .navItem {
       display: block;
       transform: skewX(-8deg);
-      transition: all 100ms ease-in;
+      transition: all 150ms ease-in;
     }
   }
   &.active {
     transform: skewX(-8deg);
     .navItem {
       text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: $colour-blue;
+      text-underline-offset: 2px;
+      @media (max-width: $media-s) {
+        text-decoration-thickness: 1px;
+      }
       &:hover {
         transform: unset;
       }
@@ -46,20 +64,10 @@
 
 .soonTagWrapper {
   position: absolute;
-  bottom: -0.5rem;
-  right: -0.75rem;
-  text-indent: unset;
-}
-
-@media screen and (max-width: 768px){
-  .navLink {
-    @include font-m;
-    font-variation-settings: 'wght' 400;
-  }
-
-  .soonTagWrapper {
-    bottom: -0.6rem;
-    right: -0.5rem;
-    width: fit-content;
+  bottom: -0.4rem;
+  right: -0.5rem;
+  width: fit-content;
+  @media (max-width: $media-s){
+    bottom: -0.5rem;
   }
 }
