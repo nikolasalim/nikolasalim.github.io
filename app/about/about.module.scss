@@ -115,6 +115,10 @@
       border-style: solid;
       border-radius: 2em;
       cursor: default;
+      transition: transform 400ms ease;
+      &:hover {
+        transform: translateY(-3px);
+      }
     }
     .techItem {
       color: $colour-blue;
@@ -182,6 +186,23 @@
   color: $colour-blue;
   background-color: unset;
   cursor: pointer;
+  &:hover {
+    .downloadBtnIcon {
+      animation: moveBackAndForth 1s ease-in-out infinite;
+    }
+  }
+  .downloadBtnIcon {
+    display: inline-block;
+    transition: transform 400ms ease;
+  }
+}
+@keyframes moveBackAndForth {
+  0%, 100% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
 }
 
 @keyframes fadeIn {
