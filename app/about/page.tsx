@@ -27,7 +27,7 @@ export default function About() {
           <br/>
           <p>And as a person, I&apos;ve always been curious about everything – which is especially handy when a big part of my job is learning new things every day.</p>
           <div className={styles.linksContainer}>
-            <a href="https://drive.google.com/file/d/1c8VQi7TZLhkeXoW7kRo02-VT-m98fnVk/view?usp=sharing" target="_blank" className={styles.downloadBtn}><span className={styles.downloadBtnIcon}>☞</span> Download CV</a>
+            <a href="https://drive.google.com/file/d/1uiZzCM55OugrtHGSWQDZHy8f-idwiEcW/view?usp=sharing" target="_blank" className={styles.downloadBtn}><span className={styles.downloadBtnIcon}>☞</span> Download CV</a>
             <a href="https://github.com/nikolasalim" target="_blank"><Image src="/assets/images/icon-github.svg" alt="github" height="24" width="24"/></a>
             <a href="https://www.linkedin.com/in/nikolasalim/" target="_blank"><Image src="/assets/images/icon-linkedin.svg" alt="linkedIn" height="24" width="24"/></a>
           </div>
